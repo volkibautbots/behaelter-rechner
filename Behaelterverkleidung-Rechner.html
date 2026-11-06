@@ -8,11 +8,7 @@
 :root{--bg:#0c1722;--panel:#142432;--paper:#f5f7f9;--ink:#172b3b;--muted:#607686;--blue:#238586;--blue-light:#5ad7c4;--line:#d9e2e8;--orange:#e1aa57;--silver:#c6d4de}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:14px;line-height:1.55}header{background:var(--bg);color:#fff;padding:36px max(24px,calc((100vw - 1460px)/2));display:flex;gap:24px;align-items:center;justify-content:space-between}header .eyebrow{color:var(--blue-light);font-size:12px;letter-spacing:.16em;text-transform:uppercase}h1{font-size:clamp(24px,3vw,37px);line-height:1.15;font-weight:650;margin:8px 0}header p{color:#b5c9d5;margin:6px 0;max-width:730px}.badge{border:1px solid #456573;color:#dbedf1;padding:8px 12px;border-radius:30px;white-space:nowrap;font-size:12px}.wrap{max-width:1460px;margin:auto;padding:26px 24px 48px}.layout{display:grid;grid-template-columns:340px minmax(0,1fr);gap:22px}.panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 3px 12px #14243206}h2{font-size:20px;margin:0 0 10px;font-weight:650}h3{font-size:15px;margin:23px 0 10px}.intro{color:var(--muted);margin:0 0 20px}.group{border-top:1px solid var(--line);margin-top:20px;padding-top:16px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:flex;flex-direction:column;gap:4px}.field label{font-size:12px;color:var(--muted)}.input{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;align-items:center;background:#fff}.input select, .input input{font:inherit;color:var(--ink);background:transparent;border:0;padding:9px 10px;min-width:0;width:100%;outline:none}.input select:focus, .input input:focus{background:#e8f6f4}.input span{padding:0 9px;color:var(--muted);font-size:12px}.hint{font-size:12px;color:var(--muted);margin:7px 0 0}.presets{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:4px 0 6px}.preset{padding:7px 4px;font-size:12px;white-space:nowrap}.preset.active{background:var(--blue);border-color:var(--blue);color:#fff;font-weight:600}.roof-presets{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:4px 0 6px}.roof-preset{padding:7px 4px;font-size:12px}.roof-preset.active{background:var(--blue);border-color:var(--blue);color:#fff;font-weight:600}.check{display:flex;gap:8px;align-items:center;margin:15px 0;font-size:13px}.check input{accent-color:var(--blue)}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:19px}button{font:inherit;cursor:pointer;border:1px solid var(--line);border-radius:8px;background:#fff;padding:9px 13px;color:var(--ink)}button.primary{background:var(--blue);border-color:var(--blue);color:#fff;font-weight:600}button:hover{filter:brightness(.96)}.viewer{position:relative;min-height:480px;overflow:hidden;background:radial-gradient(ellipse at 50% 36%,#283f50,#0b1722 75%);color:#fff}.viewer canvas{display:block;width:100%;height:480px;touch-action:none;outline:none}.legend{position:absolute;left:23px;top:23px;display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:#c6d7e0;pointer-events:none}.dot{display:inline-block;width:10px;height:10px;margin-right:6px;border:1px solid #ffffff66}.viewer-help{position:absolute;left:24px;bottom:17px;color:#9fb8c6;font-size:12px;pointer-events:none}.toolbar{position:absolute;right:20px;top:20px;display:flex;flex-direction:column;gap:7px}.toolbar button{background:#183044cc;border-color:#58728666;color:#ecfbff;padding:7px 11px;font-size:12px}.viewer-caption{padding:14px 22px;background:#fff;border:1px solid var(--line);border-top:0;border-radius:0 0 16px 16px;color:var(--muted);font-size:12px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:22px 0}.card{border:1px solid var(--line);border-left:3px solid var(--blue);padding:16px 17px;background:#fff;border-radius:10px}.card .label{color:var(--muted);font-size:12px}.card .value{font-size:23px;letter-spacing:-.04em;font-weight:650;margin:2px 0}.card .unit{color:var(--muted);font-size:12px}.section{margin-top:24px}.section-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:10px}.section-head h2{margin:0}.note{background:#e9f4f3;border-left:3px solid var(--blue);padding:14px 18px;border-radius:7px;font-size:13px;margin:17px 0}.table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:10px}table{width:100%;border-collapse:collapse;text-align:left;white-space:nowrap}th{font-size:12px;color:var(--muted);font-weight:600;background:#f0f5f7}td,th{padding:11px 13px;border-bottom:1px solid var(--line)}tr:last-child td{border-bottom:0}td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}.formula-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.formula{background:#f3f7f9;padding:16px;border-radius:9px;border:1px solid #e1e9ed}.formula strong{font-weight:600;font-size:13px}.formula .eq{display:block;color:#19425c;font-size:17px;font-family:"Cambria Math","STIX Two Math","DejaVu Serif",serif;line-height:1.75;margin:8px 0}.formula .def{font-size:12px;color:var(--muted)}.formula.frac .eq{font-size:21px}.small{font-size:12px;color:var(--muted)}.summary-table td:first-child{font-weight:550}sub{font-size:.8em}footer{padding:28px 0 0;color:var(--muted);font-size:12px}.columns-2{display:grid;grid-template-columns:1fr 1fr;gap:22px}.error{color:#a63030;background:#feeae7;padding:10px;border-radius:6px;margin-top:12px;display:none}.assumption{margin:12px 0;font-size:13px}.tag{color:var(--blue);font-size:12px;font-weight:600}.nowrap{white-space:nowrap}.flow{border-left:2px solid var(--line);padding-left:16px;margin-top:16px}.flow strong{display:block;margin-top:4px}@media(max-width:1000px){.layout{grid-template-columns:310px minmax(0,1fr)}.cards{grid-template-columns:repeat(2,1fr)}header{padding:28px 24px}}@media(max-width:740px){.layout,.formula-grid,.columns-2{grid-template-columns:1fr}.panel{padding:18px}.viewer,.viewer canvas{min-height:400px;height:400px}.badge{display:none}.wrap{padding:17px 14px 36px}header{padding:25px 19px}.cards{gap:10px}.card{padding:13px}.card .value{font-size:20px}}
 @media print{body{background:white;font-size:11px}header{padding:16px 0;background:white;color:black}header p{color:#555}.badge,.toolbar,.viewer-help,.actions{display:none}.wrap{padding:0;max-width:none}.layout{display:block}.input select, .input input{border-bottom:1px solid #ddd}.fields{gap:8px}.panel{border:0;box-shadow:none;padding:8px 0;break-inside:avoid}.viewer{display:none}.viewer-caption{border:1px solid #ddd;margin:12px 0}.card{break-inside:avoid}.cards{margin:15px 0}.section{break-inside:avoid}.formula-grid{gap:7px}.formula .eq{font-size:14px}.table-scroll{overflow:visible}table{font-size:10px}td,th{padding:6px 7px}.formula{break-inside:avoid}}
 
-.legend{right:150px;gap:6px 12px;font-size:11px;z-index:3}.toolbar{z-index:4}
-.dim-overlay{position:absolute;inset:22px;pointer-events:none;overflow:hidden;z-index:2}
-.dim-overlay svg{position:absolute;width:100%;height:100%;overflow:visible}
-.dim-label{position:absolute;background:#102433e8;border:1px solid #779aa777;border-radius:5px;padding:4px 7px;color:#e8f5fc;font-size:11px;line-height:1.35;max-width:165px;font-variant-numeric:tabular-nums}
-.dim-label strong{font-weight:600;color:#a8dfdf;display:block}.dim-note{position:absolute;bottom:23px;right:22px;color:#95b2c1;font-size:10px;pointer-events:none}
+.tank-info{position:absolute;left:14px;top:14px;z-index:3;background:#0b1722b3;border:1px solid #6f8e9c44;border-radius:7px;padding:7px 10px;font-size:11px;line-height:1.5;color:#dceaf1;pointer-events:none;font-variant-numeric:tabular-nums;display:grid;grid-template-columns:auto auto;column-gap:12px}.tank-info b{font-weight:500;color:#9fb8c6}.tank-info span{text-align:right}.viewer{border-radius:16px}
 </style>
 </head>
 <body>
@@ -25,6 +21,7 @@
 <div class="fields">
 <div class="field"><label for="diameter">Lichter Innen-Ø D</label><div class="input"><input id="diameter" type="number" min="0.1" max="100" step="0.01" value="20.00" data-input><span>m</span></div></div>
 <div class="field"><label for="height">Zylindrische Höhe H</label><div class="input"><input id="height" type="number" min="0.1" max="100" step="0.01" value="6.00" data-input><span>m</span></div></div>
+<div class="field"><label for="fillHeight">Füllhöhe</label><div class="input"><input id="fillHeight" type="number" min="0" max="6" step="0.01" value="5.50" inputmode="decimal"><span>m</span></div></div>
 <div class="field"><label for="shell">Wandstärke w</label><div class="input"><input id="shell" type="number" min="0" max="200" step="any" value="35" inputmode="decimal" data-input><span>cm</span></div></div>
 <div class="field"><label for="insulation">Dämmstärke s</label><div class="input"><input id="insulation" type="number" min="0" max="1000" step="1" value="100" data-input><span>mm</span></div></div>
 <div class="field"><label for="sheet">Aluminiumblech t</label><div class="input"><input id="sheet" type="number" min="0.01" max="10" step="0.01" value="0.70" data-input><span>mm</span></div></div>
@@ -50,7 +47,6 @@
 
 <h3>Foliendach · Doppelmembran</h3>
 <label class="check"><input id="equipment" type="checkbox" checked> Gasspeicher-Ausrüstung anzeigen</label>
-<label class="check"><input id="dimensions" type="checkbox" checked> Bemaßung anzeigen</label>
 <p class="hint">Ausrüstung nur schematisch: 0° zwei Gebläse · 90° Leiter/Podest und Drucksicherung · 180° Abluftklappen · 270° Druckentlastung. Keine Ausführungs- oder Sicherheitsplanung, keine Mengen-/Kostenansätze.</p>
 <label class="check"><input id="roof" type="checkbox" checked data-input> Foliendach als Doppelmembran (Innen- und Außenfolie)</label>
 <p class="hint">Auflageradius a = D/2 + w/2 für beide Folien. Dachdurchmesser = 2a. Stichhöhe h = p/100 · 2a. Die Innenfolie liegt um den Abstand (Prozentpunkte) flacher als die Außenfolie.</p>
@@ -74,13 +70,10 @@
 </aside>
 <section>
 <div class="viewer panel">
-<div class="legend"><span><i class="dot" style="background:#516878"></i>Behälterwand</span><span><i class="dot" style="background:#d7aa59"></i>Dämmung</span><span><i class="dot" style="background:#d7e5f1"></i>Aluminium</span><span><i class="dot" style="background:#9fd6ef"></i>Außenfolie</span><span><i class="dot" style="background:#4ec9a8"></i>Innenfolie</span><span><i class="dot" style="background:#bdcbd3"></i>Leitern/Podeste</span><span><i class="dot" style="background:#589fc0"></i>Gebläse</span><span><i class="dot" style="background:#e9b65c"></i>Abluftklappen</span><span><i class="dot" style="background:#d3837d"></i>Drucksicherung</span><span><i class="dot" style="background:#b59bd4"></i>Druckentlastung</span></div>
-<div id="dimensionOverlay" class="dim-overlay"></div><div class="dim-note">Ausrüstung schematisch · nicht zur Ausführung</div>
+<div class="tank-info" id="tankInfo" aria-live="polite"></div>
 <div class="toolbar"><button id="cutaway" type="button">Schnittansicht</button><button id="resetView" type="button">Ansicht zurücksetzen</button></div>
 <canvas id="scene" tabindex="0" aria-label="Drehbare 3-D-Darstellung eines Behälters mit Isolierung und Aluminiumverkleidung"></canvas>
-<div class="viewer-help">Ziehen zum Drehen · Mausrad oder zwei Finger zum Zoomen</div>
 </div>
-<div class="viewer-caption" id="drawingLabel">Außenansicht · Werte nicht maßstabsgerecht für Ausführungsplanung</div>
 <div class="cards">
 <div class="card"><div class="label">Behälterinnenraum</div><div class="value" id="volume">–</div><div class="unit">m³ · zylindrisches Innenvolumen</div></div>
 <div class="card"><div class="label">Gesamtvolumen · Innenfolie</div><div class="value" id="totalVolInner">–</div><div class="unit">m³ · Zylinder + Speichervolumen unter Innenfolie</div></div>
@@ -255,8 +248,12 @@ function calculate(){
  const volume=Math.PI*ri*ri*H,totalVol=volume+roofVol,totalVolInner=volume+roofVolInner;
  return {D,H,w,s,t,overlap,z,ri,r0,r1,r2,ends,columns,rows ,circ,insCirc,sideArea,insSideArea,insEndArea,insArea,insSide,insEnd,insTotal,aluRaw,aluTotal,aluMass,aluMassWaste,rings,supports,ringLength,supportLength,frameLength,screws,panelSide,panels,mats,supportHours,insHours,sheetHours,roofHours,hours,volume,totalVol,totalVolInner,envelopeVol:Math.PI*r2*r2*H,circleArea:Math.PI*ri*ri,insMass:insTotal*value('density'),roofOn,roofPct,roofGapPct,roofPctInner,zF,roofWeight,roofA,roofDiam,roofH,roofR,roofAlpha,roofArea,roofVol,roofFilm,roofMass,roofHInner,roofRInner,roofAlphaInner,roofAreaInner,roofVolInner,roofFilmInner,roofMassInner,roofGapH,roofFilmSum,roofMassSum};
 }
+function fillHeightValue(H){const el=document.getElementById('fillHeight');let f=Number(el.value);if(!Number.isFinite(f))f=Math.max(0,H-.5);return Math.min(Math.max(f,0),H)}
+function syncFillHeight(reset){const H=value('height'),el=document.getElementById('fillHeight');if(!(H>0))return;el.max=String(H);if(reset||Number(el.value)>H)el.value=Math.max(0,H-.5).toFixed(2)}
+function fillVolumes(r){const fill=fillHeightValue(r.H),area=Math.PI*r.ri*r.ri;return {fill,liquid:area*fill,gas:area*(r.H-fill)+(r.roofOn?r.roofVolInner:0)}}
+function updateTankInfo(r){const el=document.getElementById('tankInfo');if(!el)return;const f=fillVolumes(r);const rows=[['Tanktyp',materialEl.value==='Beton'?'Betonbehälter':'Stahlbehälter'],['Durchmesser',fmt(r.D)+' m'],['Höhe',fmt(r.H)+' m'],['Füllhöhe',fmt(f.fill)+' m'],['Volumen flüssig',fmt(f.liquid)+' m³'],['Volumen Gas',fmt(f.gas)+' m³']];el.innerHTML=rows.map(([k,v])=>'<b>'+k+'</b><span>'+v+'</span>').join('')}
 function render(){
- const r=calculate();if(!r)return;result=r;
+ const r=calculate();if(!r)return;result=r;updateTankInfo(r);
  ['ri','r0','r1','r2','sideArea','circ','insCirc','circleArea','envelopeVol','insSide','insEnd','insTotal','insMass','insArea','aluRaw','aluTotal','aluMass','aluMassWaste','ringLength','supportLength','frameLength'].forEach(id=>{if(r[id]!==undefined)set(id,r[id],['insTotal','insSide','insEnd','envelopeVol'].includes(id)?3:2)});set('d0',2*r.r0);set('d1',2*r.r1);set('d2',2*r.r2,4);
  set('innerVol',r.volume);set('innerVol2',r.volume);set('volume',r.volume);set('insVol',r.insTotal,3);set('aluArea',r.aluTotal);set('workTime',r.hours,1);set('workTime2',r.hours,1);set('mats',r.mats,0);set('panels',r.panels,0);set('screws',r.screws,0);set('wasteDisplay',value('waste'),0);set('ringSpacing',r.rings>1?r.H/(r.rings-1):r.H);
  set('roofA',r.roofA);set('roofDiam',r.roofDiam);set('roofH',r.roofH);set('roofPctDisplay',r.roofPct,0);set('roofR',r.roofR);set('roofAlpha',r.roofAlpha*180/Math.PI,1);set('roofArea',r.roofArea);set('roofFilm',r.roofFilm);set('roofVol',r.roofVol,3);set('roofTotalVol',r.totalVol);set('roofMass',r.roofMass,1);
@@ -297,12 +294,15 @@ function render(){
  window.lastCalculation=r;markPreset();
 }
 fields.forEach(el=>el.addEventListener('input',render));
+document.getElementById('height').addEventListener('input',()=>{syncFillHeight(false);render()});
+document.getElementById('fillHeight').addEventListener('input',()=>{if(result){updateTankInfo(result);drawScene()}});
+document.getElementById('fillHeight').addEventListener('change',()=>{const H=value('height'),el=document.getElementById('fillHeight');el.value=fillHeightValue(H).toFixed(2);render()});
 const WALL_DEFAULT={Beton:35,Stahl:1.0};
 const materialEl=document.getElementById('material');
 function wallHint(){const el=document.getElementById('wallHint');if(el)el.textContent=materialEl.value==='Beton'?'Beton: üblich 30–40 cm, Standard 35 cm.':'Stahl: Vorschlag 1,0 cm, beliebiger Wert in cm eintragbar.'}
 materialEl.addEventListener('change',()=>{document.getElementById('shell').value=WALL_DEFAULT[materialEl.value];wallHint();render()});
 function markPreset(){const D=value('diameter'),H=value('height');document.querySelectorAll('.preset').forEach(b=>b.classList.toggle('active',Number(b.dataset.d)===D&&Number(b.dataset.h)===H))}
-document.querySelectorAll('.preset').forEach(b=>b.addEventListener('click',()=>{document.getElementById('diameter').value=Number(b.dataset.d).toFixed(2);document.getElementById('height').value=Number(b.dataset.h).toFixed(2);render()}));
+document.querySelectorAll('.preset').forEach(b=>b.addEventListener('click',()=>{document.getElementById('diameter').value=Number(b.dataset.d).toFixed(2);document.getElementById('height').value=Number(b.dataset.h).toFixed(2);syncFillHeight(true);render()}));
 function markRoofPreset(){const p=value('roofPct');document.querySelectorAll('.roof-preset').forEach(b=>b.classList.toggle('active',Math.abs(Number(b.dataset.p)-p)<1e-9))}
 document.querySelectorAll('.roof-preset').forEach(b=>b.addEventListener('click',()=>{document.getElementById('roofPct').value=String(Number(b.dataset.p));document.getElementById('roof').checked=true;render()}));
 
@@ -390,44 +390,8 @@ function addGasEquipment(r,scale){
  const hood=new THREE.Mesh(new THREE.ConeGeometry(.42,.25,8),purple);hood.position.copy(rp).add(v(0,.55,0));g.add(hood);
  bar(polar(ra,rad+.03,top-.6),polar(ra,rad+.45,top),.08,dark);
 }
-let dimensionItems=[];
-function addDimensions(r,scale){
- const holder=document.getElementById('dimensionOverlay');holder.innerHTML='<svg aria-hidden="true"></svg>';dimensionItems=[];
- const dimGroup=new THREE.Group();dimGroup.name='Bemaßung';model.add(dimGroup);dimGroup.visible=checked('dimensions');model.userData.dimensions=dimGroup;
- const v=(x,y,z)=>new THREE.Vector3(x*scale,y*scale,z*scale),top=r.H/2,bottom=-top;
- function dim(title,text,a,b,side,row,color='#a8dfdf'){
-  const material=new THREE.LineBasicMaterial({color,transparent:true,opacity:.75,depthTest:false});
-  const line=new THREE.Line(new THREE.BufferGeometry().setFromPoints([a,b]),material);line.renderOrder=10;dimGroup.add(line);
-  for(const p of [a,b]){const tick=new THREE.Line(new THREE.BufferGeometry().setFromPoints([p.clone().add(new THREE.Vector3(-.025,0,0)),p.clone().add(new THREE.Vector3(.025,0,0))]),material);tick.renderOrder=10;dimGroup.add(tick)}
-  const el=document.createElement('div');el.className='dim-label';el.innerHTML='<strong>'+title+'</strong>'+text;holder.appendChild(el);
-  dimensionItems.push({el,a,b,side,row,color});
- }
- dim('Lichter Ø D',fmt(r.D)+' m',v(-r.ri,bottom-.4,0),v(r.ri,bottom-.4,0),'left',2);
- dim('Höhe H',fmt(r.H)+' m',v(-r.r2-.8,bottom,0),v(-r.r2-.8,top,0),'left',1);
- dim('Wandstärke w',(r.w*100).toLocaleString('de-DE',{maximumFractionDigits:3})+' cm',v(r.ri,top,0),v(r.r0,top,0),'left',0);
- if(r.roofOn){
- dim('Stichhöhe Außenfolie',fmt(r.roofH,3)+' m',v(0,top,0),v(0,top+r.roofH,0),'right',0,'#9fd6ef');
- dim('Stichhöhe Innenfolie',fmt(r.roofHInner,3)+' m',v(.35,top,0),v(.35,top+r.roofHInner,0),'right',1,'#4ec9a8');
- dim('Scheitelabstand',fmt(r.roofGapH,3)+' m',v(0,top+r.roofHInner,0),v(0,top+r.roofH,0),'right',2,'#f2c47a');
- }
- holder.style.display=checked('dimensions')?'':'none';
-}
-function updateDimensions(){
- const holder=document.getElementById('dimensionOverlay');if(!holder||!camera||!model)return;
- const w=canvas.clientWidth,h=canvas.clientHeight,svg=holder.querySelector('svg');if(!svg)return;
- const parts=[];
- for(const item of dimensionItems){
-  const local=item.a.clone().add(item.b).multiplyScalar(.5);model.localToWorld(local);local.project(camera);
-  const px=(local.x*.5+.5)*w,py=(-local.y*.5+.5)*h;
-  const x=item.side==='left'?8:Math.max(8,w-172),y=110+item.row*77;
-  item.el.style.left=x+'px';item.el.style.top=y+'px';item.el.style.display=local.z<1?'':'none';
-  const endX=item.side==='left'?x+Math.min(158,item.el.offsetWidth):x;
-  parts.push('<path d="M '+px.toFixed(1)+' '+py.toFixed(1)+' L '+endX+' '+(y+20)+'" fill="none" stroke="'+item.color+'" stroke-width=".75" opacity=".55"/>');
- }
- svg.innerHTML=parts.join('');
-}
 function buildModel(r){
- if(!window.THREE){document.getElementById('drawingLabel').textContent='3-D-Bibliothek fehlt. Die Berechnungen sind weiterhin verfügbar.';return}
+ if(!window.THREE)return;
  if(!scene){
  scene=new THREE.Scene();
  renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true});
@@ -494,7 +458,8 @@ function buildModel(r){
   const rimPts=[];for(let i=0;i<=64;i++){const ang=i/64*Math.PI*2;rimPts.push(new THREE.Vector3(aS*Math.cos(ang),H/2,aS*Math.sin(ang)))}
   model.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(rimPts),new THREE.LineBasicMaterial({color:0xb8e0f2,transparent:true,opacity:.85})));
  }
- addGasEquipment(r,scale);addDimensions(r,scale);
+ if(cut){const fill=fillHeightValue(r.H)*scale;if(fill>1e-4){const liquid=new THREE.Mesh(new THREE.CylinderGeometry(innerR*.995,innerR*.995,fill,64),new THREE.MeshStandardMaterial({color:0x3f7f96,transparent:true,opacity:.28,roughness:.25,metalness:0,depthWrite:false}));liquid.position.y=-H/2+fill/2;model.add(liquid)}}
+ addGasEquipment(r,scale);
  const grid=new THREE.GridHelper(30,30,0x496676,0x334858);grid.position.y=-H/2-.35;grid.material.transparent=true;grid.material.opacity=.25;scene.add(grid);model.userData.grid=grid;
  model.position.y=.14;const newDims=r.D+':'+r.H+':'+(r.roofOn?r.roofPct:0)+':'+(r.roofOn?r.roofGapPct:0)+':'+(r.roofOn?1:0);
  if(model.userData.grid){scene.remove(model.userData.grid);model.userData.grid.geometry.dispose();model.userData.grid.material.dispose()}
@@ -504,12 +469,11 @@ function buildModel(r){
 }
 function getPinch(){const p=[...pointerState.values()];return p.length===2?Math.hypot(p[0].x-p[1].x,p[0].y-p[1].y):0}
 function resize(){if(!renderer)return;const width=canvas.clientWidth,height=canvas.clientHeight;if(!width||!height)return;renderer.setSize(width,height,false);camera.aspect=width/height;camera.updateProjectionMatrix();view()}
-function view(){if(!renderer)return;const x=orbit.radius*Math.sin(orbit.phi)*Math.sin(orbit.theta),y=orbit.radius*Math.cos(orbit.phi),z=orbit.radius*Math.sin(orbit.phi)*Math.cos(orbit.theta);camera.position.set(x,y,z);camera.lookAt(0,.20,0);renderer.render(scene,camera);updateDimensions()}
+function view(){if(!renderer)return;const x=orbit.radius*Math.sin(orbit.phi)*Math.sin(orbit.theta),y=orbit.radius*Math.cos(orbit.phi),z=orbit.radius*Math.sin(orbit.phi)*Math.cos(orbit.theta);camera.position.set(x,y,z);camera.lookAt(0,.20,0);renderer.render(scene,camera)}
 function scheduleView(){if(animationId)return;animationId=requestAnimationFrame(()=>{animationId=0;view()})}
 function drawScene(){if(result)buildModel(result)}
-document.getElementById('cutaway').addEventListener('click',()=>{cut=!cut;document.getElementById('cutaway').textContent=cut?'Schnittansicht':'Vollansicht';document.getElementById('drawingLabel').textContent=cut?'Schematische Schnittansicht · Stahl, Dämmung und Aluminium als voneinander abgesetzte Schichten':'Vollansicht · Aluminiumhülle und umlaufende Tragschienen';drawScene()});
+document.getElementById('cutaway').addEventListener('click',()=>{cut=!cut;document.getElementById('cutaway').textContent=cut?'Schnittansicht':'Vollansicht';drawScene()});
 document.getElementById('equipment').addEventListener('change',()=>{if(model&&model.userData.equipment)model.userData.equipment.visible=checked('equipment');view()});
-document.getElementById('dimensions').addEventListener('change',()=>{if(model&&model.userData.dimensions)model.userData.dimensions.visible=checked('dimensions');document.getElementById('dimensionOverlay').style.display=checked('dimensions')?'':'none';view()});
 document.getElementById('resetView').addEventListener('click',()=>{const sc=result?3/Math.max(result.D,result.H+(result.roofOn?result.roofH:0),1):1;const span=result?(result.H+(result.roofOn?result.roofH:0))*sc:0;orbit={theta:.85,phi:1.24,radius:result?Math.max(5.8,span*1.7+3):11};view()});
 render();
 
