@@ -7,6 +7,12 @@
 <style>
 :root{--bg:#0c1722;--panel:#142432;--paper:#f5f7f9;--ink:#172b3b;--muted:#607686;--blue:#238586;--blue-light:#5ad7c4;--line:#d9e2e8;--orange:#e1aa57;--silver:#c6d4de}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:14px;line-height:1.55}header{background:var(--bg);color:#fff;padding:36px max(24px,calc((100vw - 1460px)/2));display:flex;gap:24px;align-items:center;justify-content:space-between}header .eyebrow{color:var(--blue-light);font-size:12px;letter-spacing:.16em;text-transform:uppercase}h1{font-size:clamp(24px,3vw,37px);line-height:1.15;font-weight:650;margin:8px 0}header p{color:#b5c9d5;margin:6px 0;max-width:730px}.badge{border:1px solid #456573;color:#dbedf1;padding:8px 12px;border-radius:30px;white-space:nowrap;font-size:12px}.wrap{max-width:1460px;margin:auto;padding:26px 24px 48px}.layout{display:grid;grid-template-columns:340px minmax(0,1fr);gap:22px}.panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 3px 12px #14243206}h2{font-size:20px;margin:0 0 10px;font-weight:650}h3{font-size:15px;margin:23px 0 10px}.intro{color:var(--muted);margin:0 0 20px}.group{border-top:1px solid var(--line);margin-top:20px;padding-top:16px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:flex;flex-direction:column;gap:4px}.field label{font-size:12px;color:var(--muted)}.input{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;align-items:center;background:#fff}.input select, .input input{font:inherit;color:var(--ink);background:transparent;border:0;padding:9px 10px;min-width:0;width:100%;outline:none}.input select:focus, .input input:focus{background:#e8f6f4}.input span{padding:0 9px;color:var(--muted);font-size:12px}.hint{font-size:12px;color:var(--muted);margin:7px 0 0}.presets{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:4px 0 6px}.preset{padding:7px 4px;font-size:12px;white-space:nowrap}.preset.active{background:var(--blue);border-color:var(--blue);color:#fff;font-weight:600}.roof-presets{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:4px 0 6px}.roof-preset{padding:7px 4px;font-size:12px}.roof-preset.active{background:var(--blue);border-color:var(--blue);color:#fff;font-weight:600}.check{display:flex;gap:8px;align-items:center;margin:15px 0;font-size:13px}.check input{accent-color:var(--blue)}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:19px}button{font:inherit;cursor:pointer;border:1px solid var(--line);border-radius:8px;background:#fff;padding:9px 13px;color:var(--ink)}button.primary{background:var(--blue);border-color:var(--blue);color:#fff;font-weight:600}button:hover{filter:brightness(.96)}.viewer{position:relative;min-height:480px;overflow:hidden;background:radial-gradient(ellipse at 50% 36%,#283f50,#0b1722 75%);color:#fff}.viewer canvas{display:block;width:100%;height:480px;touch-action:none;outline:none}.legend{position:absolute;left:23px;top:23px;display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:#c6d7e0;pointer-events:none}.dot{display:inline-block;width:10px;height:10px;margin-right:6px;border:1px solid #ffffff66}.viewer-help{position:absolute;left:24px;bottom:17px;color:#9fb8c6;font-size:12px;pointer-events:none}.toolbar{position:absolute;right:20px;top:20px;display:flex;flex-direction:column;gap:7px}.toolbar button{background:#183044cc;border-color:#58728666;color:#ecfbff;padding:7px 11px;font-size:12px}.viewer-caption{padding:14px 22px;background:#fff;border:1px solid var(--line);border-top:0;border-radius:0 0 16px 16px;color:var(--muted);font-size:12px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:22px 0}.card{border:1px solid var(--line);border-left:3px solid var(--blue);padding:16px 17px;background:#fff;border-radius:10px}.card .label{color:var(--muted);font-size:12px}.card .value{font-size:23px;letter-spacing:-.04em;font-weight:650;margin:2px 0}.card .unit{color:var(--muted);font-size:12px}.section{margin-top:24px}.section-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:10px}.section-head h2{margin:0}.note{background:#e9f4f3;border-left:3px solid var(--blue);padding:14px 18px;border-radius:7px;font-size:13px;margin:17px 0}.table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:10px}table{width:100%;border-collapse:collapse;text-align:left;white-space:nowrap}th{font-size:12px;color:var(--muted);font-weight:600;background:#f0f5f7}td,th{padding:11px 13px;border-bottom:1px solid var(--line)}tr:last-child td{border-bottom:0}td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}.formula-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.formula{background:#f3f7f9;padding:16px;border-radius:9px;border:1px solid #e1e9ed}.formula strong{font-weight:600;font-size:13px}.formula .eq{display:block;color:#19425c;font-size:17px;font-family:"Cambria Math","STIX Two Math","DejaVu Serif",serif;line-height:1.75;margin:8px 0}.formula .def{font-size:12px;color:var(--muted)}.formula.frac .eq{font-size:21px}.small{font-size:12px;color:var(--muted)}.summary-table td:first-child{font-weight:550}sub{font-size:.8em}footer{padding:28px 0 0;color:var(--muted);font-size:12px}.columns-2{display:grid;grid-template-columns:1fr 1fr;gap:22px}.error{color:#a63030;background:#feeae7;padding:10px;border-radius:6px;margin-top:12px;display:none}.assumption{margin:12px 0;font-size:13px}.tag{color:var(--blue);font-size:12px;font-weight:600}.nowrap{white-space:nowrap}.flow{border-left:2px solid var(--line);padding-left:16px;margin-top:16px}.flow strong{display:block;margin-top:4px}@media(max-width:1000px){.layout{grid-template-columns:310px minmax(0,1fr)}.cards{grid-template-columns:repeat(2,1fr)}header{padding:28px 24px}}@media(max-width:740px){.layout,.formula-grid,.columns-2{grid-template-columns:1fr}.panel{padding:18px}.viewer,.viewer canvas{min-height:400px;height:400px}.badge{display:none}.wrap{padding:17px 14px 36px}header{padding:25px 19px}.cards{gap:10px}.card{padding:13px}.card .value{font-size:20px}}
 @media print{body{background:white;font-size:11px}header{padding:16px 0;background:white;color:black}header p{color:#555}.badge,.toolbar,.viewer-help,.actions{display:none}.wrap{padding:0;max-width:none}.layout{display:block}.input select, .input input{border-bottom:1px solid #ddd}.fields{gap:8px}.panel{border:0;box-shadow:none;padding:8px 0;break-inside:avoid}.viewer{display:none}.viewer-caption{border:1px solid #ddd;margin:12px 0}.card{break-inside:avoid}.cards{margin:15px 0}.section{break-inside:avoid}.formula-grid{gap:7px}.formula .eq{font-size:14px}.table-scroll{overflow:visible}table{font-size:10px}td,th{padding:6px 7px}.formula{break-inside:avoid}}
+
+.legend{right:150px;gap:6px 12px;font-size:11px;z-index:3}.toolbar{z-index:4}
+.dim-overlay{position:absolute;inset:22px;pointer-events:none;overflow:hidden;z-index:2}
+.dim-overlay svg{position:absolute;width:100%;height:100%;overflow:visible}
+.dim-label{position:absolute;background:#102433e8;border:1px solid #779aa777;border-radius:5px;padding:4px 7px;color:#e8f5fc;font-size:11px;line-height:1.35;max-width:165px;font-variant-numeric:tabular-nums}
+.dim-label strong{font-weight:600;color:#a8dfdf;display:block}.dim-note{position:absolute;bottom:23px;right:22px;color:#95b2c1;font-size:10px;pointer-events:none}
 </style>
 </head>
 <body>
@@ -43,6 +49,9 @@
 </div>
 
 <h3>Foliendach · Doppelmembran</h3>
+<label class="check"><input id="equipment" type="checkbox" checked> Gasspeicher-Ausrüstung anzeigen</label>
+<label class="check"><input id="dimensions" type="checkbox" checked> Bemaßung anzeigen</label>
+<p class="hint">Ausrüstung nur schematisch: 0° zwei Gebläse · 90° Leiter/Podest und Drucksicherung · 180° Abluftklappen · 270° Druckentlastung. Keine Ausführungs- oder Sicherheitsplanung, keine Mengen-/Kostenansätze.</p>
 <label class="check"><input id="roof" type="checkbox" checked data-input> Foliendach als Doppelmembran (Innen- und Außenfolie)</label>
 <p class="hint">Auflageradius a = D/2 + w/2 für beide Folien. Dachdurchmesser = 2a. Stichhöhe h = p/100 · 2a. Die Innenfolie liegt um den Abstand (Prozentpunkte) flacher als die Außenfolie.</p>
 <div class="roof-presets" id="roofPresets">
@@ -65,7 +74,8 @@
 </aside>
 <section>
 <div class="viewer panel">
-<div class="legend"><span><i class="dot" style="background:#516878"></i>Behälterwand</span><span><i class="dot" style="background:#d7aa59"></i>Dämmung</span><span><i class="dot" style="background:#d7e5f1"></i>Aluminium</span><span><i class="dot" style="background:#9fd6ef"></i>Außenfolie</span><span><i class="dot" style="background:#4ec9a8"></i>Innenfolie</span></div>
+<div class="legend"><span><i class="dot" style="background:#516878"></i>Behälterwand</span><span><i class="dot" style="background:#d7aa59"></i>Dämmung</span><span><i class="dot" style="background:#d7e5f1"></i>Aluminium</span><span><i class="dot" style="background:#9fd6ef"></i>Außenfolie</span><span><i class="dot" style="background:#4ec9a8"></i>Innenfolie</span><span><i class="dot" style="background:#bdcbd3"></i>Leitern/Podeste</span><span><i class="dot" style="background:#589fc0"></i>Gebläse</span><span><i class="dot" style="background:#e9b65c"></i>Abluftklappen</span><span><i class="dot" style="background:#d3837d"></i>Drucksicherung</span><span><i class="dot" style="background:#b59bd4"></i>Druckentlastung</span></div>
+<div id="dimensionOverlay" class="dim-overlay"></div><div class="dim-note">Ausrüstung schematisch · nicht zur Ausführung</div>
 <div class="toolbar"><button id="cutaway" type="button">Schnittansicht</button><button id="resetView" type="button">Ansicht zurücksetzen</button></div>
 <canvas id="scene" tabindex="0" aria-label="Drehbare 3-D-Darstellung eines Behälters mit Isolierung und Aluminiumverkleidung"></canvas>
 <div class="viewer-help">Ziehen zum Drehen · Mausrad oder zwei Finger zum Zoomen</div>
@@ -302,9 +312,120 @@ document.getElementById('download').addEventListener('click',()=>{if(!result)ret
 
 // 3-D: Three.js wird lokal mitgeliefert. Kein Netzwerk erforderlich.
 let scene,camera,renderer,model,root,animationId,canvas=document.getElementById('scene');
-let orbit={theta:.45,phi:1.30,radius:11},pointerState=new Map(),pinchDistance=0,cut=true,lastDimensions='';
+let orbit={theta:.85,phi:1.24,radius:11},pointerState=new Map(),pinchDistance=0,cut=true,lastDimensions='';
 function cylinder(radius,height,material,y=0,segments=64){const mesh=new THREE.Mesh(new THREE.CylinderGeometry(radius,radius,height,segments),material);mesh.position.y=y;return mesh}
 function edgeMesh(radius,height,y,color){const pts=[];for(let i=0;i<=96;i++){const a=i/96*Math.PI*2;pts.push(new THREE.Vector3(radius*Math.cos(a),y-height/2,radius*Math.sin(a)))}const line=new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),new THREE.LineBasicMaterial({color,transparent:true,opacity:.75}));return line}
+
+// Visual equipment is built in real metres then scaled with the tank. No calculation inputs.
+function addGasEquipment(r,scale){
+ const g=new THREE.Group();g.name='Gasspeicher-Ausrüstung';g.scale.setScalar(scale);model.add(g);
+ g.visible=checked('equipment');model.userData.equipment=g;
+ const silver=new THREE.MeshStandardMaterial({color:0xbdcbd3,metalness:.72,roughness:.38});
+ const dark=new THREE.MeshStandardMaterial({color:0x526b78,metalness:.6,roughness:.5});
+ const blue=new THREE.MeshStandardMaterial({color:0x589fc0,metalness:.5,roughness:.35});
+ const gold=new THREE.MeshStandardMaterial({color:0xe9b65c,metalness:.55,roughness:.4});
+ const red=new THREE.MeshStandardMaterial({color:0xd3837d,metalness:.5,roughness:.35});
+ const purple=new THREE.MeshStandardMaterial({color:0xb59bd4,metalness:.5,roughness:.4});
+ const bottom=-r.H/2,top=r.H/2,rad=r.r2;
+ const v=(x,y,z)=>new THREE.Vector3(x,y,z);
+ function bar(a,b,width=.045,mat=silver,parent=g){const d=b.clone().sub(a);if(d.length()<1e-8)return;const m=new THREE.Mesh(new THREE.CylinderGeometry(width/2,width/2,d.length(),8),mat);m.position.copy(a).add(b).multiplyScalar(.5);m.quaternion.setFromUnitVectors(v(0,1,0),d.normalize());parent.add(m);return m}
+ function box(x,y,z,sx,sy,sz,mat=silver,parent=g){const m=new THREE.Mesh(new THREE.BoxGeometry(sx,sy,sz),mat);m.position.set(x,y,z);parent.add(m);return m}
+ const polar=(a,d,y)=>v(Math.sin(a)*d,y,Math.cos(a)*d);
+ function arc(a0,a1,d,y,width=.045,mat=silver){let prev=polar(a0,d,y);const n=Math.max(5,Math.ceil(Math.abs(a1-a0)*d/.15));for(let i=1;i<=n;i++){const p=polar(a0+(a1-a0)*i/n,d,y);bar(prev,p,width,mat);prev=p}}
+ // Access ladder, 90 degrees. Two stiles and 280 mm rung pitch, all outside cladding.
+ const ladderAngle=Math.PI/2,lr=rad+.24;
+ const ladder=new THREE.Group();ladder.name='Steigleiter 90°';ladder.rotation.y=ladderAngle;g.add(ladder);
+ [-.29,.29].forEach(x=>bar(v(x,bottom,lr),v(x,top+1.1,lr),.065,silver,ladder));
+ for(let y=bottom+.14;y<=top+.01;y+=.28)bar(v(-.29,y,lr),v(.29,y,lr),.035,silver,ladder);
+ for(let y=bottom+.45;y<top;y+=1.5)for(const x of [-.29,.29])bar(v(x,y,rad+.035),v(x,y,lr),.05,dark,ladder);
+ // Semi-circular back cage opens towards the wall; radius 0.4 m behind the rung plane.
+ function cagePoint(a,y){return v(.4*Math.cos(a),y,lr+.4*Math.sin(a))}
+ const cageBase=bottom+Math.min(2.5,r.H);
+ if(r.H>2.5){const ys=[];for(let y=cageBase;y<top+1.1;y+=.9)ys.push(y);ys.push(top+1.1);
+ for(const y of ys)for(let j=0;j<20;j++)bar(cagePoint(j*Math.PI/20,y),cagePoint((j+1)*Math.PI/20,y),.035,silver,ladder);
+ for(const a of [0,Math.PI/4,Math.PI/2,3*Math.PI/4,Math.PI])bar(cagePoint(a,cageBase),cagePoint(a,top+1.1),.028,silver,ladder);}
+ // Ground-level grated landing at ladder foot.
+ box(0,bottom+.035,lr+.45,1.1,.07,1.25,dark,ladder);
+ for(let x=-.5;x<=.5;x+=.10)box(x,bottom+.08,lr+.45,.025,.025,1.25,silver,ladder);
+ // Curved 3.8 m rim service platform, outboard of the membrane. Ladder arrives at centre.
+ const half=1.9/(rad+.6),a0=ladderAngle-half,a1=ladderAngle+half,rin=rad+.10,rout=rad+1.25;
+ const floor=new THREE.Mesh(new THREE.RingGeometry(rin,rout,40,1,a0-Math.PI/2,a1-a0),dark);
+ floor.rotation.x=-Math.PI/2;floor.position.y=top;floor.material.side=THREE.DoubleSide;g.add(floor);
+ for(let i=0;i<=38;i++){const a=a0+(a1-a0)*i/38;bar(polar(a,rin,top+.025),polar(a,rout,top+.025),.022)}
+ for(let d=rin;d<=rout;d+=.13)arc(a0,a1,d,top+.03,.018);
+ for(const y of [top+.075,top+.55,top+1.1])arc(a0,a1,rout,y,y===top+.075?.13:.045);
+ const posts=Math.ceil(3.8/1.5);for(let i=0;i<=posts;i++){const a=a0+(a1-a0)*i/posts;bar(polar(a,rout,top),polar(a,rout,top+1.1),.055)}
+ for(const a of [a0,a1]){for(const y of [top+.075,top+.55,top+1.1])bar(polar(a,rin,y),polar(a,rout,y),y===top+.075?.13:.045);bar(polar(a,rin,top),polar(a,rin,top+1.1),.055)}
+ for(const a of [a0,a1])bar(polar(a,rad+.03,top-1.2),polar(a,rout,top-.08),.08,dark);
+ // Supports/ducts are indicative only, not a manufacturer or safety design.
+ const capY=(sphereR,h,d)=>top+h-sphereR+Math.sqrt(Math.max(0,sphereR*sphereR-d*d));
+ if(r.roofOn){
+  const ductRadius=r.roofA*.97;
+  const gapY=(capY(r.roofR,r.roofH,ductRadius)+capY(r.roofRInner,r.roofHInner,ductRadius))/2;
+  // Exactly two blowers side by side, centred on 0 degrees; outlets face 180 degrees opposite.
+  for(const offset of [-.48,.48]){
+   const a=offset/(rad+.75),p=polar(a,rad+.75,top+.35);
+   const unit=new THREE.Group();unit.name='Stützluftgebläse';unit.position.copy(p);unit.rotation.y=a;g.add(unit);
+   box(0,-.4,0,.75,.12,.8,dark,unit);
+   const housing=new THREE.Mesh(new THREE.CylinderGeometry(.29,.29,.25,24),blue);housing.rotation.x=Math.PI/2;unit.add(housing);
+   box(.28,0,0,.35,.26,.3,dark,unit);
+   for(let i=-2;i<=2;i++)bar(v(i*.08,-.22,.14),v(i*.08,.22,.14),.018,silver,unit);
+   const out=polar(a,ductRadius,gapY);bar(p,out,.18,blue);
+   bar(polar(a,rad+.05,top-.9),polar(a,rad+.75,top-.05),.075,dark);
+   // Flap on outer membrane at exactly a + pi (same paired angular offsets).
+   const fa=a+Math.PI,fr=r.roofA*.97,fy=capY(r.roofR,r.roofH,fr),fp=polar(fa,fr,fy);
+   const end=polar(fa,fr+.48,fy+.35);bar(fp,end,.22,gold);
+   const flap=new THREE.Mesh(new THREE.BoxGeometry(.42,.06,.38),gold);flap.position.copy(end);flap.rotation.set(.25,fa,0);g.add(flap);
+  }
+ }
+ // Pressure safety pot, at 90 degrees, accessible from service platform.
+ const pot=polar(Math.PI/2+half*.65,rad+.56,top+.48);
+ const potMesh=new THREE.Mesh(new THREE.CylinderGeometry(.25,.25,.8,24),red);potMesh.position.copy(pot);g.add(potMesh);
+ bar(pot.clone().add(v(0,-.4,0)),polar(Math.PI/2+half*.65,r.roofA*.97,top+.20),.14,red);
+ const cap=new THREE.Mesh(new THREE.ConeGeometry(.33,.14,24),silver);cap.position.copy(pot).add(v(0,.53,0));g.add(cap);bar(pot,pot.clone().add(v(0,.49,0)),.12,red);
+ // Distinct hooded pressure-relief stack, 270 degrees, opposite ladder.
+ const ra=3*Math.PI/2,rp=polar(ra,rad+.42,top+.55);
+ bar(polar(ra,rad+.42,top),rp.clone().add(v(0,.4,0)),.22,purple);
+ bar(polar(ra,r.roofA*.98,top+.18),rp.clone().add(v(0,-.3,0)),.15,purple);
+ const hood=new THREE.Mesh(new THREE.ConeGeometry(.42,.25,8),purple);hood.position.copy(rp).add(v(0,.55,0));g.add(hood);
+ bar(polar(ra,rad+.03,top-.6),polar(ra,rad+.45,top),.08,dark);
+}
+let dimensionItems=[];
+function addDimensions(r,scale){
+ const holder=document.getElementById('dimensionOverlay');holder.innerHTML='<svg aria-hidden="true"></svg>';dimensionItems=[];
+ const dimGroup=new THREE.Group();dimGroup.name='Bemaßung';model.add(dimGroup);dimGroup.visible=checked('dimensions');model.userData.dimensions=dimGroup;
+ const v=(x,y,z)=>new THREE.Vector3(x*scale,y*scale,z*scale),top=r.H/2,bottom=-top;
+ function dim(title,text,a,b,side,row,color='#a8dfdf'){
+  const material=new THREE.LineBasicMaterial({color,transparent:true,opacity:.75,depthTest:false});
+  const line=new THREE.Line(new THREE.BufferGeometry().setFromPoints([a,b]),material);line.renderOrder=10;dimGroup.add(line);
+  for(const p of [a,b]){const tick=new THREE.Line(new THREE.BufferGeometry().setFromPoints([p.clone().add(new THREE.Vector3(-.025,0,0)),p.clone().add(new THREE.Vector3(.025,0,0))]),material);tick.renderOrder=10;dimGroup.add(tick)}
+  const el=document.createElement('div');el.className='dim-label';el.innerHTML='<strong>'+title+'</strong>'+text;holder.appendChild(el);
+  dimensionItems.push({el,a,b,side,row,color});
+ }
+ dim('Lichter Ø D',fmt(r.D)+' m',v(-r.ri,bottom-.4,0),v(r.ri,bottom-.4,0),'left',2);
+ dim('Höhe H',fmt(r.H)+' m',v(-r.r2-.8,bottom,0),v(-r.r2-.8,top,0),'left',1);
+ dim('Wandstärke w',(r.w*100).toLocaleString('de-DE',{maximumFractionDigits:3})+' cm',v(r.ri,top,0),v(r.r0,top,0),'left',0);
+ if(r.roofOn){
+ dim('Stichhöhe Außenfolie',fmt(r.roofH,3)+' m',v(0,top,0),v(0,top+r.roofH,0),'right',0,'#9fd6ef');
+ dim('Stichhöhe Innenfolie',fmt(r.roofHInner,3)+' m',v(.35,top,0),v(.35,top+r.roofHInner,0),'right',1,'#4ec9a8');
+ dim('Scheitelabstand',fmt(r.roofGapH,3)+' m',v(0,top+r.roofHInner,0),v(0,top+r.roofH,0),'right',2,'#f2c47a');
+ }
+ holder.style.display=checked('dimensions')?'':'none';
+}
+function updateDimensions(){
+ const holder=document.getElementById('dimensionOverlay');if(!holder||!camera||!model)return;
+ const w=canvas.clientWidth,h=canvas.clientHeight,svg=holder.querySelector('svg');if(!svg)return;
+ const parts=[];
+ for(const item of dimensionItems){
+  const local=item.a.clone().add(item.b).multiplyScalar(.5);model.localToWorld(local);local.project(camera);
+  const px=(local.x*.5+.5)*w,py=(-local.y*.5+.5)*h;
+  const x=item.side==='left'?8:Math.max(8,w-172),y=110+item.row*77;
+  item.el.style.left=x+'px';item.el.style.top=y+'px';item.el.style.display=local.z<1?'':'none';
+  const endX=item.side==='left'?x+Math.min(158,item.el.offsetWidth):x;
+  parts.push('<path d="M '+px.toFixed(1)+' '+py.toFixed(1)+' L '+endX+' '+(y+20)+'" fill="none" stroke="'+item.color+'" stroke-width=".75" opacity=".55"/>');
+ }
+ svg.innerHTML=parts.join('');
+}
 function buildModel(r){
  if(!window.THREE){document.getElementById('drawingLabel').textContent='3-D-Bibliothek fehlt. Die Berechnungen sind weiterhin verfügbar.';return}
  if(!scene){
@@ -373,20 +494,23 @@ function buildModel(r){
   const rimPts=[];for(let i=0;i<=64;i++){const ang=i/64*Math.PI*2;rimPts.push(new THREE.Vector3(aS*Math.cos(ang),H/2,aS*Math.sin(ang)))}
   model.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(rimPts),new THREE.LineBasicMaterial({color:0xb8e0f2,transparent:true,opacity:.85})));
  }
+ addGasEquipment(r,scale);addDimensions(r,scale);
  const grid=new THREE.GridHelper(30,30,0x496676,0x334858);grid.position.y=-H/2-.35;grid.material.transparent=true;grid.material.opacity=.25;scene.add(grid);model.userData.grid=grid;
  model.position.y=.14;const newDims=r.D+':'+r.H+':'+(r.roofOn?r.roofPct:0)+':'+(r.roofOn?r.roofGapPct:0)+':'+(r.roofOn?1:0);
  if(model.userData.grid){scene.remove(model.userData.grid);model.userData.grid.geometry.dispose();model.userData.grid.material.dispose()}
  const spanH=H+(r.roofOn?r.roofH*scale:0);
- if(newDims!==lastDimensions){orbit.radius=Math.max(8,spanH*2.05+4);lastDimensions=newDims}
+ if(newDims!==lastDimensions){orbit.radius=Math.max(5.8,spanH*1.7+3);lastDimensions=newDims}
  resize();view();
 }
 function getPinch(){const p=[...pointerState.values()];return p.length===2?Math.hypot(p[0].x-p[1].x,p[0].y-p[1].y):0}
 function resize(){if(!renderer)return;const width=canvas.clientWidth,height=canvas.clientHeight;if(!width||!height)return;renderer.setSize(width,height,false);camera.aspect=width/height;camera.updateProjectionMatrix();view()}
-function view(){if(!renderer)return;const x=orbit.radius*Math.sin(orbit.phi)*Math.sin(orbit.theta),y=orbit.radius*Math.cos(orbit.phi),z=orbit.radius*Math.sin(orbit.phi)*Math.cos(orbit.theta);camera.position.set(x,y,z);camera.lookAt(0,.20,0);renderer.render(scene,camera)}
+function view(){if(!renderer)return;const x=orbit.radius*Math.sin(orbit.phi)*Math.sin(orbit.theta),y=orbit.radius*Math.cos(orbit.phi),z=orbit.radius*Math.sin(orbit.phi)*Math.cos(orbit.theta);camera.position.set(x,y,z);camera.lookAt(0,.20,0);renderer.render(scene,camera);updateDimensions()}
 function scheduleView(){if(animationId)return;animationId=requestAnimationFrame(()=>{animationId=0;view()})}
 function drawScene(){if(result)buildModel(result)}
 document.getElementById('cutaway').addEventListener('click',()=>{cut=!cut;document.getElementById('cutaway').textContent=cut?'Schnittansicht':'Vollansicht';document.getElementById('drawingLabel').textContent=cut?'Schematische Schnittansicht · Stahl, Dämmung und Aluminium als voneinander abgesetzte Schichten':'Vollansicht · Aluminiumhülle und umlaufende Tragschienen';drawScene()});
-document.getElementById('resetView').addEventListener('click',()=>{const sc=result?3/Math.max(result.D,result.H+(result.roofOn?result.roofH:0),1):1;const span=result?(result.H+(result.roofOn?result.roofH:0))*sc:0;orbit={theta:.45,phi:1.30,radius:result?Math.max(8,span*2.05+4):11};view()});
+document.getElementById('equipment').addEventListener('change',()=>{if(model&&model.userData.equipment)model.userData.equipment.visible=checked('equipment');view()});
+document.getElementById('dimensions').addEventListener('change',()=>{if(model&&model.userData.dimensions)model.userData.dimensions.visible=checked('dimensions');document.getElementById('dimensionOverlay').style.display=checked('dimensions')?'':'none';view()});
+document.getElementById('resetView').addEventListener('click',()=>{const sc=result?3/Math.max(result.D,result.H+(result.roofOn?result.roofH:0),1):1;const span=result?(result.H+(result.roofOn?result.roofH:0))*sc:0;orbit={theta:.85,phi:1.24,radius:result?Math.max(5.8,span*1.7+3):11};view()});
 render();
 
 
